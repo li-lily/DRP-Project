@@ -1,0 +1,144 @@
+\documentclass{amsart}
+\usepackage[utf8]{inputenc}
+
+\documentclass{amsart}
+\usepackage{mathtools}
+\usepackage{centernot}
+\usepackage{stmaryrd}
+\usepackage{esvect}
+\usepackage{upgreek}
+\usepackage{comment}
+\usepackage{amsfonts}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+
+
+% \usepackage[nottoc]{tocbibind}
+\usepackage{datetime}
+\usepackage{graphicx}
+\usepackage[nointegrals]{wasysym}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{enumerate}
+\usepackage{marginnote}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{bbm}
+% \usepackage{thm-autoref}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+
+\usepackage[textwidth=25mm]{todonotes}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem*{unthm}{Theorem}
+
+\newtheorem{lem}[thm]{Lemma}
+% \newcommand{\lemautorefname}{Lemma}
+
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\theoremstyle{definition}
+\newtheorem*{question}{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+\usepackage[top=2cm, bottom=2cm, inner=2cm, outer=4cm, marginparwidth=3.4cm]{geometry}
+
+% \usepackage{gentium}
+% \usepackage[euler-digits,small]{eulervm}
+\usepackage{enumerate}
+\usepackage{xcolor}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{cite}
+
+\newcommand*{\incfig}[2][1]{%
+    \def\svgscale{#1}
+    \import{./images/}{#2.pdf_tex}
+}
+
+\newcommand{\A}{\mathfrak{A}}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newtheorem{manualtheoreminner}{Proposition}
+\newenvironment{manualprop}[1]{%
+  \renewcommand\themanualtheoreminner{#1}%
+  \manualtheoreminner
+}{\endmanualtheoreminner}
+
+\setlength{\parindent}{12 pt}
+
+\title{Fall 2020 DRP Writeup}
+\author{Lily Li}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+\label{sec:intro}
+
+The Riemann-Roch theorem is a theorem describing the space of meromorphic functions on a compact complex Riemann surface. In this section, we will establish some notation and state the theorem. 
+
+
+\section{Preliminaries on Divisors}
+\begin{defn}[Divisors]
+
+\end{defn}
+
+For the purposes of this theorem, the following quantities appear in the equation. 
+
+$g$: the genus of the Riemann surface. It's also the dimension of the 1-forms of the first kind on the surface.
+
+$r(\mathfrak{A}^{-1})$: the dimension of the vector space $L(\mathfrak{A}^{-1})=\{f\in\script{K}(M); (f)\geq\mathfrak{A}^{-1}\}$. 
+
+$i(\A)$: the index of specialty of the divisor $\A$. In other words, this is the dimension of the space of abelian differentials $\omega$ with $(\omega)\geq \A$.
+
+deg$\A$: The degree of the divisor.
+
+\section{The Theorem}
+\begin{thm}
+Let M be a compact Riemann surface of genus g and $\A$ an integral divisor on $M$. Then 
+$$r(\A^{-1})=\deg \A -g+1+i(\A)$$
+\end{thm}
+
+\begin{proof}
+We first assume that $\A$ is strictly integral. Write it as the following 
+$$\A = P_1^{n_1}\cdots P_m^{n_m}$$
+\end{proof}
+
+\bibliographystyle{alpha}
+\bibliography{references}
+
+\end{document}
